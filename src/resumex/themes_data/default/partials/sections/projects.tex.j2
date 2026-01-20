@@ -1,0 +1,12 @@
+\resumesection{Projects}
+\begin{resumeitemize}
+{% for p in sections.projects.items %}
+  {% set left = "\\textbf{" ~ (p.title|escape_tex) ~ "} \\ $|$ \\ \\emph{" ~ (p.stack|escape_tex) ~ "}" %}
+  {% set right = p.dates %}
+  {% include "partials/blocks/heading_1row.tex.j2" %}
+  {% if p.highlights %}
+    {% set bullets = p.highlights %}
+    {% include "partials/blocks/bullet_list.tex.j2" %}
+  {% endif %}
+{% endfor %}
+\end{resumeitemize}

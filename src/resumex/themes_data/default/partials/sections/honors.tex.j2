@@ -1,0 +1,8 @@
+\resumesection{Honors \& Awards}
+\begin{resumeitemize}
+{%- for h in sections.honors.items -%}
+\item\begin{tabular*}{1.0\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+\small\textbf{ {{ h.title|escape_tex -}} } $|$ {{ h.org|escape_tex }} & {{ h.dates|escape_tex }} \\
+\end{tabular*}
+{%- endfor -%}
+\end{resumeitemize}

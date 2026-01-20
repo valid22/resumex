@@ -1,0 +1,11 @@
+\resumesection{Education}
+\begin{resumeitemize}
+{%- for e in sections.education.items -%}
+{%- set left_top = e.school -%}
+{%- set right_top = e.location -%}
+{%- set left_bottom = e.degree -%}
+{%- set right_bottom = e.dates -%}
+{%- set details_tex = e.details_tex -%}
+{%- include "partials/blocks/subheading_2row_details.tex.j2" -%}
+{%- endfor -%}
+\end{resumeitemize}

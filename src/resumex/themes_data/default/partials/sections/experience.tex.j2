@@ -1,0 +1,14 @@
+\resumesection{Experience}
+\begin{resumeitemize}
+{%- for x in sections.experience.items -%}
+{%- set left_top = x.role -%}
+{%- set right_top = x.dates -%}
+{%- set left_bottom = x.company -%}
+{%- set right_bottom = x.location -%}
+{%- include "partials/blocks/subheading_2row.tex.j2" -%}
+{%- if x.highlights -%}
+{%- set bullets = x.highlights -%}
+{%- include "partials/blocks/bullet_list.tex.j2" -%}
+{%- endif -%}
+{%- endfor -%}
+\end{resumeitemize}

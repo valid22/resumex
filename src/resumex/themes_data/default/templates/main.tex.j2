@@ -1,0 +1,16 @@
+\documentclass[{{ theme.options.page.paper }},{{ theme.options.page.font_size_pt }}pt]{article}
+
+{% include "partials/preamble.tex.j2" %}
+
+\begin{document}
+
+%----------HEADER----------
+{% include theme.section_templates["header"] %}
+
+{% for sec_id in theme.allowed_sections %}
+{% if sec_id != "header" and sections.get(sec_id) %}
+{% include theme.section_templates[sec_id] %}
+{% endif %}
+{% endfor %}
+
+\end{document}

@@ -1,0 +1,7 @@
+\item\begin{tabular*}{1.0\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+\textbf{ {{ left_top|escape_tex -}} } & {{ right_top|escape_tex }} \\
+\textit{\small {{ left_bottom|escape_tex -}} } & \textit{\small {{ right_bottom|escape_tex }}} \\
+{% if details_tex -%}
+\multicolumn{2}{@{}p{1.0\textwidth}}{\begin{minipage}[t]{1.0\textwidth}\small {{ details_tex|safe }}\end{minipage}} \\
+{%- endif %}
+\end{tabular*}

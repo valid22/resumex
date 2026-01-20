@@ -1,0 +1,46 @@
+id: default
+extends: null
+
+compiler:
+  engine: pdflatex
+  latexmk: true
+
+allowed_sections:
+  - header
+  - summary
+  - education
+  - experience
+  - projects
+  - honors
+  - skills
+
+section_templates:
+  header: partials/header.tex.j2
+  summary: partials/sections/summary.tex.j2
+  education: partials/sections/education.tex.j2
+  experience: partials/sections/experience.tex.j2
+  projects: partials/sections/projects.tex.j2
+  honors: partials/sections/honors.tex.j2
+  skills: partials/sections/skills.tex.j2
+
+section_models:
+  header: resumex.models.sections:HeaderSection
+  summary: resumex.models.sections:SummarySection
+  education: resumex.models.sections:EducationSection
+  experience: resumex.models.sections:ExperienceSection
+  projects: resumex.models.sections:ProjectsSection
+  honors: resumex.models.sections:HonorsSection
+  skills: resumex.models.sections:SkillsSection
+
+options:
+  page:
+    paper: letterpaper
+    font_size_pt: 11
+    margin_left: "-0.5in"
+    margin_right: "-0.5in"
+    textwidth_delta: "1in"
+    topmargin: "-.5in"
+    textheight_delta: "1.2in"
+  spacing:
+    section_vspace_before_pt: "-2pt"
+    section_rule_vspace_after_pt: "-5pt"

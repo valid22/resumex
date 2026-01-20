@@ -1,0 +1,79 @@
+meta:
+  theme: default
+
+sections:
+  header:
+    name: "John Doe"
+    contacts:
+      - text: "(555) 123-4567"
+      - text: "john.doe@email.com"
+        href: "mailto:john.doe@email.com"
+      - text: "linkedin.com/in/johndoe"
+        href: "https://linkedin.com/in/johndoe"
+      - text: "github.com/johndoe"
+        href: "https://github.com/johndoe"
+
+  summary:
+    text: "Experienced data professional with a strong background in business analytics, engineering, and machine learning. Proven track record of delivering high-impact projects and optimizing complex workflows."
+
+  education:
+    items:
+      - school: "UC San Diego"
+        location: "La Jolla, CA"
+        degree: "Master of Science in Business Analytics"
+        dates: "Sep 2024 -- May 2026"
+        details:
+          - "GPA: \\textbf{3.9/4.0}"
+          - "Relevant Coursework: Advanced Analytics, Machine Learning, SQL, Big Data Systems"
+      - school: "State Technological University"
+        location: "Country"
+        degree: "Bachelor of Technology in Computer Science/Biotechnology"
+        dates: "Aug 2018 -- May 2022"
+        details:
+          - "GPA: 3.8/4.0 — Graduated with Honors"
+          - "Coursework: Data Structures, Algorithms, Statistics, Programming (Python, C++)"
+
+  experience:
+    items:
+      - role: "Senior Data Analytics Engineer"
+        dates: "Jun 2022 -- Present"
+        company: "Tech Solutions Inc."
+        location: "Remote"
+        highlights:
+          - "Designed and implemented scalable data dashboards using Python and SQL, leading to a 15% increase in operational efficiency."
+          - "Automated complex ETL pipelines for real-time reporting, standardizing data architecture across multiple departments."
+          - "Managed a cross-functional team of 5 to deliver high-priority analytics projects for executive stakeholders."
+      - role: "Software Engineering Intern"
+        dates: "Jan 2022 -- May 2022"
+        company: "Global Software Corp."
+        location: "San Francisco, CA"
+        highlights:
+          - "Optimized backend database queries, reducing response times by 10% for high-traffic applications."
+          - "Collaborated with senior engineers to implement new features in Java and Python, ensuring high code quality and test coverage."
+
+  projects:
+    items:
+      - title: "Snowflake Analytics Project"
+        stack: "Snowflake, SQL, Python (ETL), dbt, Plotly, Tableau"
+        dates: "Feb 2023 -- Apr 2023"
+        highlights:
+          - "Developed star/snowflake schemas and Python ETL pipelines into Snowflake, building dbt models and optimized Plotly/Tableau dashboards that improved query speed by ~25%."
+          - "Implemented query optimization and RBAC; interactive Plotly/Tableau dashboards surfaced sales, churn, and profitability trends, reducing dashboard latency by ~25%."
+      - title: "HyperSense — ML Project"
+        stack: "Python, Pandas, TensorFlow, Plotly"
+        dates: "Jul 2022 -- Jan 2023"
+        highlights:
+          - "Designed a BiLSTM pipeline for hypersense detection achieving 0.98 AUC-ROC on benchmarks, with visualizations using Plotly."
+
+  honors:
+    items:
+      - title: "Mentorship Lead"
+        org: "University Tech Club"
+        dates: "2021 -- 2023"
+      - title: "First Place, Innovation Challenge"
+        org: "National Engineering Summit"
+        dates: "2022"
+
+  skills:
+    label: "Languages & Tools"
+    value: "Python, SQL, Java, SAS, Tableau, Plotly, dbt, Snowflake, AWS, Git"

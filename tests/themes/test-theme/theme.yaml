@@ -1,0 +1,15 @@
+id: test-theme
+allowed_sections:
+  - header
+  - summary
+section_templates:
+  header: partials/header.tex.j2
+  summary: partials/summary.tex.j2
+section_models:
+  header: resumex.models.sections:HeaderSection
+  summary: resumex.models.sections:SummarySection
+compiler:
+  engine: pdflatex
+  latexmk: false
+options:
+  foo: bar

@@ -1,0 +1,12 @@
+\resumesection{Leadership \& Activities}
+\begin{resumeitemize}
+{% for a in sections.leadership.items %}
+  {% set left = "\\textbf{" ~ (a.title|escape_tex) ~ "} \\ $|$ " ~ (a.org|escape_tex) %}
+  {% set right = a.dates %}
+  {% include "partials/blocks/heading_1row.tex.j2" %}
+  {% if a.highlights %}
+    {% set bullets = a.highlights %}
+    {% include "partials/blocks/bullet_list.tex.j2" %}
+  {% endif %}
+{% endfor %}
+\end{resumeitemize}

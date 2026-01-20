@@ -1,0 +1,12 @@
+\begin{center}
+  {\huge \scshape {{ sections.header.name|escape_tex }}} \\ \vspace{2pt}
+  \small
+  {% for c in sections.header.contacts %}
+    {% if c.href %}
+      \href{ {{ c.href|escape_tex }} }{\underline{ {{ c.text|escape_tex }} }}
+    {% else %}
+      {{ c.text|escape_tex }}
+    {% endif %}
+    {% if not loop.last %} $|$ {% endif %}
+  {% endfor %}
+\end{center}
